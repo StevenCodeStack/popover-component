@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 
+// Props
 type Position = "left" | "right";
 
 const { data, position } = withDefaults(
@@ -41,6 +42,7 @@ let isOpen = ref(true);
         class="grid grid-cols-3 gap-3 gap-y-0 overflow-scroll hideScrollBar h-full"
       >
         <div v-for="item in data" :key="item.id">
+          <!-- Items -->
           <a :href="item.link" class="flex flex-col gap-1 items-center">
             <img :src="item.icon" class="h-16 w-16" />
             <p class="text-center shrink-0 text-xs text-white font-semibold">

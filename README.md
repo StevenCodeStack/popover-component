@@ -1,5 +1,10 @@
-# Vue 3 + TypeScript + Vite
+Popover Component
+Props =>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+- Data, type : {id:number, title:string, icon:string (pathname), link:string}
+- position : left | right, all bottom
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+component is mutable
+
+raw Popover.vue file =>
+[text](https://raw.githubusercontent.com/StevenCodeStack/popover-component/main/src/components/Popover.vue)
