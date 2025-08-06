@@ -6,5 +6,4 @@ Props =>
 
 component is mutable
 
-raw Popover.vue file =>
-[text](https://raw.githubusercontent.com/StevenCodeStack/popover-component/main/src/components/Popover.vue)
+[raw Popover.vue file](https://raw.githubusercontent.com/StevenCodeStack/popover-component/main/src/components/Popover.vue)
