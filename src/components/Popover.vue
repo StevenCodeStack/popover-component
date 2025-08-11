@@ -49,11 +49,11 @@ let isOpen = ref(false);
 </script>
 
 <template>
-  <div :class="['fixed bottom-5 inline-block z-100', 'right-5']">
+  <div :class="['fixed bottom-8 inline-block z-100', 'right-8']">
     <!-- Popover -->
     <div
       :class="[
-        'absolute bottom-full mb-2 bg-white border border-slate-700 z-10 rounded-2xl transition-all ease-in-out',
+        'absolute bottom-full mb-2 bg-white border border-slate-300 z-10 rounded-2xl transition-all ease-in-out',
         isOpen
           ? 'w-90 h-100 opacity-100 p-3 py-6 border shadow-lg'
           : 'w-0 h-0 -z-1 p-0',
@@ -61,7 +61,7 @@ let isOpen = ref(false);
       ]"
     >
       <div
-        class="grid grid-cols-3 gap-3 gap-y-0 overflow-scroll hideScrollBar h-full"
+        class="grid grid-cols-3 gap-3 gap-y-0 overflow-scroll hideScrollBar h-full overflow-x-hidden"
       >
         <div v-for="item in data" :key="item.id">
           <!-- Items -->
@@ -69,7 +69,7 @@ let isOpen = ref(false);
             :href="item.link"
             class="flex flex-col gap-1 items-center hover:bg-[#f1f1f1] rounded-2xl justify-center p-3 transition-all cursor-pointer"
           >
-            <img :src="item.icon" class="h-16 w-16" />
+            <img :src="item.icon" class="h-20 w-20" />
             <p class="text-center text-xs text-black font-semibold">
               {{ item.title }}
             </p>
@@ -81,15 +81,15 @@ let isOpen = ref(false);
     <!-- Trigger Button -->
     <div
       @click="isOpen = !isOpen"
-      class="bg-white border border-slate-700 w-10 h-10 flex justify-center items-center rounded-full z-100 cursor-pointer hover:bg-[#edf8ff]"
+      class="bg-white shadow-2xl gradientbutton border border-slate-300 w-16 h-16 flex justify-center items-center rounded-full z-100 cursor-pointer hover:bg-[#edf8ff]"
     >
-      <img :src="LogoPrimakara" class="w-6 h-6" />
+      <img :src="LogoPrimakara" class="w-8 h-8" />
     </div>
   </div>
 </template>
 
 <style>
-.hideScrollBar {
-  scrollbar-width: none;
+.gradientbutton:hover {
+  background: linear-gradient(to top, #ccc, white);
 }
 </style>
