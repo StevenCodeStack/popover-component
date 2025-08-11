@@ -1,47 +1,5 @@
 <script setup lang="ts">
 import Popover from "./components/Popover.vue";
-const data = [
-  {
-    id: 1,
-    title: "Sistem Absensi",
-    icon: "/icons/icon-sistem-absensi.svg",
-    link: "/",
-  },
-  { id: 2, title: "Elearn", icon: "/icons/icon-elearn.svg", link: "/" },
-  {
-    id: 3,
-    title: "Sistem Akademik",
-    icon: "/icons/icon-sistem-akademik.svg",
-    link: "/index",
-  },
-  {
-    id: 4,
-    title: "Sistem Kepegawaian",
-    icon: "/icons/icon-sistem-kepegawaian.svg",
-    link: "/",
-  },
-  { id: 5, title: "SSO", icon: "/icons/icon-sso.svg", link: "/" },
-  {
-    id: 1,
-    title: "Sistem Absensi",
-    icon: "/icons/icon-sistem-absensi.svg",
-    link: "/",
-  },
-  { id: 2, title: "Elearn", icon: "/icons/icon-elearn.svg", link: "/" },
-  {
-    id: 3,
-    title: "Sistem Akademik",
-    icon: "/icons/icon-sistem-akademik.svg",
-    link: "/",
-  },
-  {
-    id: 4,
-    title: "Sistem Kepegawaian",
-    icon: "/icons/icon-sistem-kepegawaian.svg",
-    link: "/",
-  },
-  { id: 5, title: "SSO", icon: "/icons/icon-sso.svg", link: "/" },
-];
 </script>
 
 <template>
@@ -68,5 +26,5 @@ const data = [
       screen.
     </p>
   </section>
-  <Popover :data="data" position="right" />
+  <Popover />
 </template>
